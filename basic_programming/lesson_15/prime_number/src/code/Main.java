@@ -4,7 +4,7 @@ public class Main {
 
     public static void main(String[] args) {
 	// Задаем начальные данные
-        System.out.println("Hallo!!!");
+        System.out.println("Hello!!!");
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("Input N");
