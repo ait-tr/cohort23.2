@@ -10,5 +10,6 @@ For loop
 https://ege-study.ru/tablica-kvadratov-naturalnyx-chisel-formuly-sokrashhennogo-umnozheniya/
 
 **Задача 2**
-Вывести на экран все простые числа меньше введенного N
+Вывести на экран все простые числа меньше введенного N.
+Перед тем, как приступать к кодированию программы, описать алгоритм словами.
 
