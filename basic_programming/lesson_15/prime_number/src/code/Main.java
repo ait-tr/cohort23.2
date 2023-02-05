@@ -1,3 +1,4 @@
+package code;
 import java.util.Scanner;
 
 public class Main {
@@ -22,10 +23,10 @@ public class Main {
             }
         }
         if (isPrime) {
-        System.out.println("The number " + n + " is prime.");
+        System.out.println("Number " + n + " is prime.");
                 }
         else {
-            System.out.println("The number " + n + " is NOT prime.");
+            System.out.println("Number " + n + " is NOT prime.");
             }
     }
 }
