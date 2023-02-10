@@ -3,7 +3,8 @@
   "theory": "theory.md",
   "homework": "homework.md",
   "code": [
-    "code/T1/src/code/Main.java"
+    "code/Task-1/src/code/Main.java",
+    "code/Task-2/src/code/Main.java"
   ],
   "video": ""
 }
