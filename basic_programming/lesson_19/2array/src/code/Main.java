@@ -5,10 +5,8 @@ public class Main {
     public static void main(String[] args) {
         System.out.println("Привет, мир!");
         System.out.println("Работа с 2-хмерным массивом.");
-
-        int k = 0;
-        String charAt;
-
+        //System.out.println();
+        System.out.println("Шахматная доска:");
         int [][] field = new int[8][8];
         for (int i = 0; i < field.length; i++) {
             for (int j = 0; j < field[i].length; j++){
