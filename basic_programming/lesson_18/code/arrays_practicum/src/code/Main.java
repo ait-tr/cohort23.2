@@ -36,7 +36,6 @@ public class Main {
             a[i] = 15 + 7 * i;
             System.out.print(a[i] + " | ");
         }
-
         System.out.println();
         System.out.println();
 
