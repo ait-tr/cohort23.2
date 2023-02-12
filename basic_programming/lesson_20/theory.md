@@ -16,28 +16,51 @@ should not try to catch.
 * Exception: Exception indicates **conditions** that a reasonable application 
 **might try to catch**.
 
-The **try** statement allows you to define a block of code to be tested for errors while it is being executed.
-The **catch** statement allows you to define a block of code to be executed, if an error occurs in the try block.
-The **try and catch keywords come in pairs**:
+### Синтаксис
 `try {
-        //  Block of code to try
-    }
+//  Block of code to try
+}
 catch(Exception e) {
-    //  Block of code to handle errors
-    }`
+//  Block of code to handle errors
+}`
+#### Пояснения 
+The **try** statement allows you to define a block of code 
+to be tested for errors while it is being executed.
 
-Примеры:
-1. Выход за пределы массива;
-2. Деление на 0.
+The **catch** statement allows you to define a block of code 
+to be executed, if an error occurs in the try block.
+The **try and catch keywords come in pairs**:
 
 Все исключения и ошибки пользователя можно обрабатывать самому, НО ЗАЧЕМ?
-Разарботчики Java предоставляют стандартный инструментарий для этого - 
+Разарботчики Java предоставляют стандартный инструментарий для этого -
 это класс Throwable (потомок класса Oject) и его методы.
 
-### The advantages of Exception Handling in Java are as follows:
+Примеры:
+1. Деление на 0;
+2. Выход за пределы массива;
+3. Проверка ввода пользователя на корректность - не вводить символы вместо букв.
 
-* Provision to Complete Program Execution
-* Easy Identification of Program Code and Error-Handling Code
-* Propagation of Errors
-* Meaningful Error Reporting
-* Identifying Error Types
+### Примеры
+1. Деление a на b, нельзя делить на 0;
+   `System.out.println("Деление на 0:");
+   int a = 100;
+   int b = 0;
+   try {
+   int div = a / b;
+   } catch (Exception e) {
+   System.out.println("Зачем вы делите на ноль???");
+   }`
+   2. Выход за пределы длины массива;
+   `  int[] myNumbers = {1, 2, 3};
+      try {
+      System.out.println(myNumbers[10]);
+      } catch (Exception e) {
+      System.out.println("Вы обратились к элементу массива, индекс которого больше, чем длина массива.");
+      };`
+3. Калькулятор деления a на b, оформляем бесконечный цикл, защита от деления на 0 
+и ввода символов вместо чисел;
+4. Расчет периметра прямоугольника, защита от ввода символов вместо числа 
+и ввода отрицательных чисел;
+5. Использование debugger на примере задачи про шахматную доску.
+
+### Домашнее задание
