@@ -10,6 +10,7 @@ import java.util.InputMismatchException;
 
 // Пример с делением на 0 и обработкой неправильного ввода (символы вместо чисел)
 // Сделать калькуллятор для деления с защитой от деления на 0 и ввода символов вместо цифр
+
 public class Main {
     public static void main(String[] args) {
         System.out.println("Привет, давай делить!");
