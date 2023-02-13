@@ -12,12 +12,38 @@ import java.util.InputMismatchException;
 // Сделать калькуллятор для деления с защитой от деления на 0 и ввода символов вместо цифр
 
 public class Main {
-    public static void main(String[] args) {
-        System.out.println("Привет, давай делить!");
 
+    public static int div(int num1, int num2) {
+        return num1 / num2;
     }
-}
 
+    public static void main(String[] args) {
+        System.out.println("Привет!");
+        Scanner scann = new Scanner(System.in);
+
+        char choice_y_or_n;
+
+        while (true) {
+            try {
+                System.out.println("Введите целое число a: ");
+                int a = scann.nextInt();
+                System.out.println("Введите целое число b: ");
+                int b = scann.nextInt();
+                int с = div(a, b);
+                System.out.println("Частное " + a + " / " + b + " = " + с);
+            } catch (ArithmeticException ex) {
+                System.out.println(ex.getMessage() + " Делить на ноль нельзя!");
+            } catch (InputMismatchException ex) {
+                System.out.println("Ошибка " + ex.getMessage() + " означает, что нельзя вводить символы!");
+            }
+            System.out.println("Продолжить? y/n ");
+            choice_y_or_n = scann.next().toLowerCase().charAt(0);
+            if (choice_y_or_n == 'n') {
+                break;
+            } else continue;
+        }
+        }
+    }
 
 /*
     // Выход за пределы массива
@@ -60,14 +86,14 @@ public class Main {
             int a = 0;
             int b = 0;
             int c = 0;
-            try {
+            try { // начало проверяемого на Exception кода
                 System.out.println("Input a: ");
                 a = scanner.nextInt();
                 System.out.println("Input b: ");
                 b = scanner.nextInt();
                 c = div(a, b);
                 System.out.println("Result " + a + " / " + b + " = " + c);
-            } catch (ArithmeticException ex) {
+            } catch (ArithmeticException ex) { // определяем, что делать, если поймали Exception
                 System.out.println("Ошибка " + ex.getMessage() + " На 0 делить нельзя!");
             } catch (InputMismatchException ex) {
                 System.out.println("Ошибка ввода, вы ввели не число!");

@@ -3,24 +3,24 @@
 Exception - исключение, особая ситуация (перевод с английского)
 
 ### Major reasons why an exception Occurs
-* Invalid user input
-* Device failure
-* Loss of network connection
-* Physical limitations (out of disk memory)
-* Code errors
-* Opening an unavailable file
+* **Invalid user input - неправильный ввод пользователя (80-90% случаев)**
+* Device failure - сломалось устройство, выключили питание и т.д.
+* Loss of network connection - потеряли Интернет, Eternet и т.д.
+* Physical limitations (out of disk memory) - нехватка памяти ОЗУ, жестких дисков
+* **Code errors - ошибки кода программистов**
+* Opening an unavailable file - открытие недоступного файла
 
 ### Differences between Error and Exception that is as follows: 
-* Error: An Error indicates a **serious problem** that a reasonable application
-should not try to catch.
-* Exception: Exception indicates **conditions** that a reasonable application 
+* **Error:** An Error indicates a **serious problem** that a reasonable application
+should **not try to catch**.
+* **Exception:** Exception indicates **conditions** that a reasonable application 
 **might try to catch**.
 
 ### Синтаксис
-`try {
+`try { // попытаться
 //  Block of code to try
 }
-catch(Exception e) {
+catch(Exception e) { // схватить
 //  Block of code to handle errors
 }`
 #### Пояснения 
@@ -33,12 +33,12 @@ The **try and catch keywords come in pairs**:
 
 Все исключения и ошибки пользователя можно обрабатывать самому, НО ЗАЧЕМ?
 Разарботчики Java предоставляют стандартный инструментарий для этого -
-это класс Throwable (потомок класса Oject) и его методы.
+это класс Throwable (потомок класса Object) и его методы.
 
 Примеры:
 1. Деление на 0;
 2. Выход за пределы массива;
-3. Проверка ввода пользователя на корректность - не вводить символы вместо букв.
+3. Проверка ввода пользователя на корректность - не вводить символы вместо чисел.
 
 ### Примеры
 1. Деление a на b, нельзя делить на 0;
