@@ -54,9 +54,10 @@ public class Main {
         }
         System.out.println("В предложении " + count + " пробелов и " + (count + 1) + " слов.");
 
-        String[] s = sentence.split(" ");
+        String[] s = sentence.split(" "); // преобразуем предложение в массив слов
+        // проверочная печать
         for (int i = 0; i < s.length; i++) {
-            // System.out.print(s[i] + " | "); проверочная печать
+            // System.out.print(s[i] + " | ");
         }
         System.out.println();
         // Заносим слова в список
@@ -65,7 +66,6 @@ public class Main {
             wordsInSentence.add(i, s[i]);
         }
         System.out.println(wordsInSentence);
-
     }
 }
 
