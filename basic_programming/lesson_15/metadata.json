@@ -3,6 +3,9 @@
   "theory": "theory.md",
   "homework": "homework.md",
   "code": [
+    "code/factorial/src/code/Main.java",
+    "code/prime_number/src/code/Main.java",
+    "code/string_to_letter/src/code/Main.java"
   ],
   "video": ""
 }
