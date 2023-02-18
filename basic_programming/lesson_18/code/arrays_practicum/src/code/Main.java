@@ -7,7 +7,7 @@ public class Main {
         System.out.println();
 
         //Температура по дням недели
-        int[] temperatures = new int[] {-1, 2, 0, 3, -5, 2, 1};
+        int[] temperatures = new int[] {-1, 2, 0, 3, -5, 2, 1}; // зададим массив и заполним его значениями температуры
         String[] days = {"Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday" };
 
         for (int i = 0; i < temperatures.length; i++){
@@ -22,8 +22,6 @@ public class Main {
         System.out.println("Average temperature of week is: " + average_temp);
 
         System.out.println();
-
-
 
         // арифметическая прогрессия A(n) = A1 + d*(n-1), d - разница прогресиb, A1 - первый член
         // Пусть A1 = 15, d = 7, сформировать массив из 10 первых чисел такой арифметической прогрессии
