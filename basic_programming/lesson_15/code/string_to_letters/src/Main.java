@@ -8,7 +8,7 @@ public class Main {
         System.out.println("Input word: ");
         String word = scanner.nextLine();
         System.out.println("Your input: " + word);
-        int n = word.length();
+        int n = word.length(); // определяем длину слова
         System.out.println("Length of word is: " + n);
         char ch = ' '; // переменная для символа (буквы)
         for (int i = 0; i < n; i++){ // .charAt() - начинает с нулевого индекса
