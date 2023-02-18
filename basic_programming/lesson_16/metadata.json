@@ -3,7 +3,8 @@
   "theory": "theory.md",
   "homework": "homework.md",
   "code": [
-
+    "code/negative_even_break/src/code/Main.java",
+    "code/sum_even_numbers/src/code/Main.java"
   ],
   "video": ""
 }
