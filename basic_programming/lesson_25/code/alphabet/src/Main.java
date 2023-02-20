@@ -21,6 +21,6 @@ public class Main {
         // Добавим опять, еще раз букву K
         latAlphabet.add("K");
         System.out.println();
-        System.out.println(latAlphabet); // печать сета gjckt попытки добавить букву К еще раз
+        System.out.println(latAlphabet); // печать сета после попытки добавить букву К еще раз
     }
 }
