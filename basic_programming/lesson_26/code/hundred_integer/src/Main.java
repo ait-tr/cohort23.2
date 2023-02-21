@@ -25,3 +25,16 @@ public class Main {
         System.out.println("Уникальных чисел в HashSet: " + k); // печать результата
     }
 }
+
+/*  Вариант Дины:
+
+    HashSet<Integer> randomSet = new HashSet();
+
+        for (int i = 1; i < 100; i ++) { // заполнение нужно начинать с 0
+            randomSet.add((int) ((Math.random() * 99 + 1)));
+        };
+
+        for (int numbers : randomSet) {
+            System.out.println(numbers);
+        }
+ */

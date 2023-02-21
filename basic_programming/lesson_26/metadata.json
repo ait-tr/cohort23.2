@@ -3,9 +3,9 @@
   "theory": "theory.md",
   "homework": "homework.md",
   "code": [
-    "code/alphabet/src/Main.java",
-    "code/post_codes/src/Main.java",
-    "code/words/src/Main.java"
+    "code/task_1/src/Main.java",
+    "code/task_2/src/Main.java",
+    "code/task_3/src/Main.java"
   ],
   "video": ""
 }
