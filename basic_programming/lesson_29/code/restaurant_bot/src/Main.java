@@ -28,10 +28,10 @@ public class Main {
 
             System.out.println("У нас есть свободные столики: ");
 
-            print_table_status(tables);
+            print_table_status(tables); // метод печатает статус столов
             System.out.println("Выберите номер столика: " );
             int table_num = sc.nextInt();
-            reserv_table(tables, table_num);
+            reserv_table(tables, table_num); // метод, который резервирует стол
             print_table_status(tables);
 
         //} while (true);
