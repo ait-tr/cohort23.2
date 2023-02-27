@@ -41,6 +41,8 @@ public class Main {
             garland_set_nul(garland); // погасили гирлянду
         }
 
+        Thread.sleep(300); // задержка
+
         // garland_off_n(garland, garland.size() - 1 ); // погасили последнюю лампочку в гирлянде
         garland_set_nul(garland); // погасили гирлянду
         garland_print_out(garland); // напечатали гирлянду
