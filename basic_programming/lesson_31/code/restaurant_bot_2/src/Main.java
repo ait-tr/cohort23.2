@@ -32,6 +32,7 @@ public class Main {
         // считывание статуса столиков из файла
         // get_table_status_from_file();
 
+
         // Проверка на наличие свободных столиков
         is_full = is_full(tables, 5);
 
@@ -51,6 +52,44 @@ public class Main {
         // ________________________
         // save_table_status(tables, path); // сохраним статус столов в файле
         // ________________________
+        // Готовимся к созданию файла и создаем его
+        String path = "/Users/leonidk/Library/Mobile Documents/com~apple~CloudDocs/Documents/Моя работа/Курс Java Core/cohort23.2/basic_programming/lesson_31/code/restaurant_bot_2/src/";
+        try {
+            File myFile = new File ( path + "table_status.txt"); // Укажите свое имя файла
+
+            if (myFile.createNewFile()) {
+                System.out.println("Файл создан: " + myFile.getName());
+            } else {
+                System.out.println("Файл уже существует.");
+            }
+        } catch (IOException e) {
+            System.out.println("Произошла ошибка.");
+            e.printStackTrace();
+        }
+
+        try {
+            FileWriter myWriter = new FileWriter(path + "table_status.txt"); // используем класс и его метод
+
+            myWriter.write("Это НАША запись текста в файл."); // Пишем то, что записываем в файл
+
+            // for (Object i : map.keySet()) {
+            //    String status = "";
+            //    if (map.get(i).equals(true)) {
+            //        status = " зарезервирован ";
+            //    } else {status = " свободен ";
+            //    }
+            //    myWriter.write("Столик: " + i + " статус: " + status + '\n');
+
+                // System.out.println();
+
+            myWriter.close(); // Закрываем метод
+            System.out.println("Успешная запись в файл."); // Сообщение об успехе
+        } catch (IOException e) {  // поймали ошибку и положили ее в переменную с именем e
+            System.out.println("Произошла ошибка."); // Сообщение об ошибке
+            e.printStackTrace(); // печать содержания ошибок
+        }
+
+        // ________________________
 
         print_table_status(tables);
 
@@ -58,6 +97,7 @@ public class Main {
 
     }
 
+    // Этод метод резервирует столик
     public static void reserv_table(HashMap<Integer, Boolean> map, int num) {
         if (map.get(num).equals(false)) {
             map.put(num,true);
@@ -69,6 +109,7 @@ public class Main {
         }
     }
 
+    // Этод метод печатает статус столиков
     public static void print_table_status(HashMap<Integer, Boolean> map){
         for (Object i : map.keySet()) {
             String status = "";
@@ -80,6 +121,7 @@ public class Main {
         }
     }
 
+    // Этот метод проверяет, есть ли свободные столики
     public static boolean is_full(HashMap<Integer, Boolean> map, int num) {
         boolean is_full = true;
         for ( int i = 1; i < 6; i++) {
@@ -93,43 +135,3 @@ public class Main {
     }
 
 }
-
-/*
-    //_______________________________
-     // Подготовка к сохранению статуса столов - создание файла
-        String path = "/Users/leonidk/Library/Mobile Documents/com~apple~CloudDocs/Documents/Моя работа/Курс Java Core/cohort23.2/basic_programming/lesson_31/code/restaurant_bot_1/src/";
-        try {
-            File myFile = new File(path + "tables_status.txt"); // Укажите свое имя файла
-            if (myFile.createNewFile()) {
-                System.out.println("Файл создан: " + myFile.getName());
-            } else {
-                System.out.println("Файл уже существует.");
-            }
-        } catch (IOException e) {
-            System.out.println("Произошла ошибка.");
-            e.printStackTrace();
-        }
-
-    //______________________________
-        public static void save_table_status(HashMap<Integer, Boolean> map, String path) {
-        try {
-            FileWriter myWriter = new FileWriter(path + "tables_status.txt");
-            // здесь будем толкать строки в файл
-            for (Object i : map.keySet()) {
-                String status = "";
-                if (map.get(i).equals(true)) {
-                    status = " зарезервирован ";
-                } else {status = " свободен ";
-                }
-                myWriter.write("Столик: " + i + " статус: " + status + '\n');
-                // System.out.println();
-            }
-            myWriter.close();
-            System.out.println("Успешная запись в файл.");
-        } catch (IOException e) {
-            System.out.println("Произошла ошибка.");
-            e.printStackTrace();
-        }
-    }
-
- */
