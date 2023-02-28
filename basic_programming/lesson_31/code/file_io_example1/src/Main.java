@@ -10,16 +10,18 @@ public class Main {
         // Создание нового файла
         System.out.println("Пример работы с файлом - СОЗДАНИЕ НОВОГО ФАЙЛА");
 
+        String path = "/Users/leonidk/Library/Mobile Documents/com~apple~CloudDocs/Documents/Моя работа/Курс Java Core/cohort23.2/basic_programming/lesson_31/code/file_example1/src/";
+
         try {
-        File myFile = new File("/Users/leonidk/Library/Mobile Documents/com~apple~CloudDocs/Documents/Моя работа/Курс Java Core/cohort23.2/basic_programming/lesson_31/code/file_example1/src/test.txt"); // Specify the filename
+        File myFile = new File(path + "test.txt"); // Укажите свое имя файла
 
         if (myFile.createNewFile()) {
-            System.out.println("File created: " + myFile.getName());
+            System.out.println("Файл создан: " + myFile.getName());
         } else {
-            System.out.println("File already exists.");
+            System.out.println("Файл уже существует.");
         }
         } catch (IOException e) {
-            System.out.println("An error occurred.");
+            System.out.println("Произошла ошибка.");
             e.printStackTrace();
         }
 
@@ -27,12 +29,12 @@ public class Main {
         System.out.println("Пример работы с файлом - ЗАПИСЬ в ФАЙЛ");
 
         try {
-            FileWriter myWriter = new FileWriter("/Users/leonidk/Library/Mobile Documents/com~apple~CloudDocs/Documents/Моя работа/Курс Java Core/cohort23.2/basic_programming/lesson_31/code/file_example1/src/test.txt");
-            myWriter.write("Files in Java might be tricky, but it is fun enough!");
+            FileWriter myWriter = new FileWriter(path + "test.txt");
+            myWriter.write("Это пробная запись текста в файл.");
             myWriter.close();
-            System.out.println("Successfully wrote to the file.");
+            System.out.println("Успешная запись в файл.");
         } catch (IOException e) {
-            System.out.println("An error occurred.");
+            System.out.println("Произошла ошибка.");
             e.printStackTrace();
         }
 
@@ -40,7 +42,7 @@ public class Main {
         System.out.println("Пример работы с файлом - ЧТЕНИЕ из ФАЙЛА");
 
         try {
-            File myFile = new File("/Users/leonidk/Library/Mobile Documents/com~apple~CloudDocs/Documents/Моя работа/Курс Java Core/cohort23.2/basic_programming/lesson_31/code/file_example1/src/test.txt");
+            File myFile = new File(path + "test.txt");
             Scanner myReader = new Scanner(myFile); // готовим сканер для чтения
             while (myReader.hasNextLine()) {
                 String data = myReader.nextLine(); // считываем строку
@@ -48,7 +50,7 @@ public class Main {
             }
             myReader.close();
         } catch (FileNotFoundException e) {
-            System.out.println("An error occurred.");
+            System.out.println("Произошла ошибка.");
             e.printStackTrace();
         }
 
