@@ -1,0 +1,10 @@
+{
+  "plan": "plan.md",
+  "theory": "theory.md",
+  "homework": "homework.md",
+  "code": [
+    "code/сoffee_mashine/src/Main.java",
+    "code/enum_example/src/Main.java"
+  ],
+  "video": ""
+}

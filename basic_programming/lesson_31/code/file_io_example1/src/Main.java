@@ -10,6 +10,7 @@ public class Main {
         String path = "/Users/leonidk/Library/Mobile Documents/com~apple~CloudDocs/Documents/Моя работа/Курс Java Core/cohort23.2/basic_programming/lesson_31/code/file_io_example1/src/";
 
         // Создание нового файла
+        //______________________________
         System.out.println("Пример работы с файлом - СОЗДАНИЕ НОВОГО ФАЙЛА");
 
         ///Users/leonidk/Library/Mobile Documents/com~apple~CloudDocs/Documents/Моя работа/Курс Java Core/cohort23.2/basic_programming/lesson_31/code/file_io_example1/src
@@ -27,6 +28,8 @@ public class Main {
             e.printStackTrace();
         }
 
+        //_______________________________
+
         // Запись в файл текста
         System.out.println("Пример работы с файлом - ЗАПИСЬ в ФАЙЛ");
 
@@ -39,6 +42,8 @@ public class Main {
             System.out.println("Произошла ошибка."); // Сообщение об ошибке
             e.printStackTrace(); // печать содержания ошибок
         }
+
+        //_____________________________
 
         // Чтение текста из файла
         System.out.println("Пример работы с файлом - ЧТЕНИЕ из ФАЙЛА");
@@ -55,6 +60,9 @@ public class Main {
             System.out.println("Произошла ошибка.");
             e.printStackTrace();
         }
+
+        //_____________________________
+
     }
 }
 
