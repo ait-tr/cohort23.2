@@ -1,7 +1,19 @@
 public class Main {
     public static void main(String[] args) {
         System.out.println("Пример использования enum");
-        enum Seasons {
+
+
+
+
+    }
+}
+
+
+
+
+
+/*
+  enum Seasons {
             WINTER,
             SPRING,
             SUMMER,
@@ -24,5 +36,4 @@ public class Main {
                         break;
                     }
                 }
-    }
-}
+ */

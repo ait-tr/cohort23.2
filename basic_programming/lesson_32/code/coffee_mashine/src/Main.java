@@ -3,6 +3,13 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         System.out.println("Добро пожаловать в нашу кофейню!");
+
+
+    }
+}
+
+/*
+System.out.println("Добро пожаловать в нашу кофейню!");
         Scanner sc = new Scanner(System.in);
 
     enum CoffeeType {
@@ -62,5 +69,4 @@ public class Main {
                 break;
             }
         }
-    }
-}
+ */
