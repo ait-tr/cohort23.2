@@ -3,9 +3,8 @@
   "theory": "theory.md",
   "homework": "homework.md",
   "code": [
-    "code/file_io_example1/src/Main.java",
-    "code/numeric_systems/src/Main.java",
-    "code/restaurant_bot_2/src/Main.java"
+    "code/сoffee_mashine/src/Main.java",
+    "code/enum_example/src/Main.java"
   ],
   "video": ""
 }
