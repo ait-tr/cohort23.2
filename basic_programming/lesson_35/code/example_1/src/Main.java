@@ -27,6 +27,7 @@ public class Main {
         System.out.println("Тип: " + myPet.type + " Порода: " + myPet.breed + " имя:  " + myPet.name + " вес: " + myPet.weight);
         System.out.println();
         System.out.println(myPet.toString());
+
     }
 }
 

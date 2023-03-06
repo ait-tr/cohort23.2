@@ -13,7 +13,11 @@ public class Pet {
                 ", вес = " + weight;
     }
 
-
+    public Pet(String type, String breed, String name, double weight) {
+        this.type = type;
+        this.breed = breed;
+        this.name = name;
+        this.weight = weight;
     }
 }
 
