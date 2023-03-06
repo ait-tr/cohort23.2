@@ -2,7 +2,38 @@ public class Main {
     public static void main(String[] args) {
         System.out.println("Пример создания класса");
         // создание класса внутри класса Main
-        class Car {
+
+        class Car { // придумали имя класса
+            String brand; // описали главные его поля, характеристики
+            String color;
+            int year;
+            String type;
+        }
+
+        Car myCar = new Car();
+        myCar.brand = "VW";
+        myCar.color = "серебристый металлик";
+        myCar.type = "universal";
+        myCar.year = 2018;
+
+        // System.out.println("Марка автомобиля: " + myCar.brand + ", цвет " + myCar.color + ", год выпуска "  + myCar.year);
+
+        Pet myPet = new Pet();
+         myPet.type = "cat";
+         myPet.breed = "Burmese";
+         myPet.name = "Benjamine";
+         myPet.weight = 4.5;
+
+        System.out.println("Тип: " + myPet.type + " Порода: " + myPet.breed + " имя:  " + myPet.name + " вес: " + myPet.weight);
+        System.out.println();
+        System.out.println(myPet.toString());
+    }
+}
+
+
+
+/*
+    class Car {
             String brand; // марка - Audi, BMW, Mercedes, Opel, ...
             String type; // тип - седан, универсал, внедорожник, ...
             int capacity; // вместимость - 2, 4, 5, 7 человек
@@ -27,5 +58,4 @@ public class Main {
         System.out.println(myPet.toString());
         System.out.println("Вес: " + myPet.getWeight());
 
-    }
-}
+ */

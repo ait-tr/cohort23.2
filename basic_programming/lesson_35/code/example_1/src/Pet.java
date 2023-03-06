@@ -1,5 +1,46 @@
 // задаем класс Домашние животные
 public class Pet {
+    String type;
+    String breed;
+    String name;
+    double weight;
+
+    @Override // переопределение метода
+    public String toString() {
+        return "Pet " +
+                "type='" + type + " | " +
+                ", breed='" + breed + " | " +
+                ", name='" + name + " | " +
+                ", weight=" + weight +
+                ". ";
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
     String type; // тип - кошка, собака, корова и т.д.
     String breed; // порода
     String name; // имя
@@ -47,7 +88,6 @@ public class Pet {
                 ", вес= " + weight +
                 '.';
     }
-}
-
+ */
 
 
