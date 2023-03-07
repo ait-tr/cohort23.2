@@ -1,48 +1,50 @@
 public class Phone {
-    String number;
+    String phoneNumber;
     String brand;
-    double weight;
+    String model;
 
     @Override
     public String toString() {
         return "Phone{" +
-                "number='" + number + '\'' +
+                "phoneNumber='" + phoneNumber + '\'' +
                 ", brand='" + brand + '\'' +
-                ", weight=" + weight +
+                ", model='" + model + '\'' +
                 '}';
     }
 
-    public void receiveCall(String name){
+    public void receiveCall (String name) { // сигнатура метода - это вся первая строчка
         System.out.println("Звонит: " + name);
     }
 
-    public String getNumber() {
-        return number;
+    public String getPhoneNumber() { // геттер для телефонного номера
+        return phoneNumber;
     }
 
-    public Phone(String number, String brand, double weight) {
-        this.number = number;
+    // это конструктор класса
+    public Phone(String phoneNumber, String brand, String model) {
+        this.phoneNumber = phoneNumber;
         this.brand = brand;
-        this.weight = weight;
+        this.model = model;
     }
 
-    public void setNumber(String number) {
-        this.number = number;
-    }
-
-    public void setBrand(String brand) {
-        this.brand = brand;
-    }
-
-    public void setWeight(double weight) {
-        this.weight = weight;
+    // это сеттер, он может установить телефонный номер для конкретного экземпляра класса
+    public void setPhoneNumber(String phoneNumber) {
+        this.phoneNumber = phoneNumber;
     }
 
     public String getBrand() {
         return brand;
     }
 
-    public double getWeight() {
-        return weight;
+    public void setBrand(String brand) {
+        this.brand = brand;
+    }
+
+    public String getModel() {
+        return model;
+    }
+
+    public void setModel(String model) {
+        this.model = model;
     }
 }
