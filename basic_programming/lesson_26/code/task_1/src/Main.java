@@ -23,7 +23,7 @@ public class Main {
             System.out.println("key: " + i + " value: " + group23.get(i));
         }
 
-        System.out.println(group23.("Leonid K"));
+        System.out.println(group23.("Leonid K");
 
     }
 }

@@ -6,24 +6,24 @@ public class Main {
     public static void main(String[] args) {
         System.out.println("Звери у ветеринара");
 
-//        Dog dog1 = new Dog("собака", "пудель");
-//        dog1.makeNoise();
-//        dog1.eat();
-//        dog1.getDescription();
-//
-//        System.out.println();
-//
-//        Cat cat1 = new Cat("кошка", "сиамская");
-//        cat1.makeNoise();
-//        cat1.eat();
-//        cat1.getDescription();
-//
-//        System.out.println();
-//
-//        Bear bear1 = new Bear("медведь", "косолапый");
-//        bear1.makeNoise();
-//        bear1.eat();
-//        bear1.getDescription();
+        Dog dog1 = new Dog("собака", "пудель");
+        dog1.makeNoise();
+        dog1.eat();
+        dog1.getDescription();
+
+        System.out.println();
+
+        Cat cat1 = new Cat("кошка", "сиамская");
+        cat1.makeNoise();
+        cat1.eat();
+        cat1.getDescription();
+
+        System.out.println();
+
+        Bear bear1 = new Bear("медведь", "косолапый");
+        bear1.makeNoise();
+        bear1.eat();
+        bear1.getDescription();
 
         List animals = new ArrayList<>();
         animals.add(dog1);
@@ -50,7 +50,7 @@ public class Main {
                 break;
             }
             System.out.println("Следующий? y/n ");
-            choice = sc.nextLine();
+            choice = String.valueOf(sc.nextLine().toLowerCase().charAt(0));
             if (choice == "n") {break;}
         }
 

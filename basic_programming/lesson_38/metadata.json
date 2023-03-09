@@ -1,0 +1,12 @@
+{
+  "plan": "plan.md",
+  "theory": "theory.md",
+  "homework": "homework.md",
+  "code": [
+    "code/employee_salary/src/Main.java",
+    "code/employee_salary/src/Employee.java",
+    "code/employee_salary/src/Salary.java",
+    "code/animals_veterinar/src/Main.java"
+  ],
+  "video": ""
+}

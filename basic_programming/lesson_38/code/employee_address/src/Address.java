@@ -24,5 +24,5 @@ public class Address extends Employee {
         return streetAndHouse;
     }
 
-    }
 }
+
