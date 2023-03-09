@@ -1,5 +1,5 @@
 public class Cat extends Animal{
-    String breed;
+    String breed; // это поле для породы
 
     public Cat(String name, String breed) {
         super(name);
