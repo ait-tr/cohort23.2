@@ -3,8 +3,8 @@
   "theory": "theory.md",
   "homework": "homework.md",
   "code": [
-    "code/homework_l35/src/Main.java",
-    "code/phone/src/Main.java"
+    "code/employee_salary/src/Main.java",
+    "code/animals_veterinar/src/Main.java"
   ],
   "video": ""
 }
