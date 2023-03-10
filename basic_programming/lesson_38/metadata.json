@@ -3,10 +3,17 @@
   "theory": "theory.md",
   "homework": "homework.md",
   "code": [
-    "code/employee_salary/src/Main.java",
-    "code/employee_salary/src/Employee.java",
-    "code/employee_salary/src/Salary.java",
-    "code/animals_veterinar/src/Main.java"
+    "code/bus/src/Main.java",
+    "code/bus/src/Bus.java",
+    "code/bus/src/Driver.java",
+    "code/bus/src/Passenger.java",
+    "code/employee_address/src/Employee.java",
+    "code/employee_address/src/Address.java",
+    "code/employee_address/src/Main.java",
+    "code/triangle/src/Main.java",
+    "code/triangle/src/Triangle.java",
+    "code/voter/src/Main.java",
+    "code/voter/src/Voter.java"
   ],
   "video": ""
 }
