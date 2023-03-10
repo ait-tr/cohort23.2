@@ -1,4 +1,4 @@
-public class Employee {
+public abstract class Employee {
     private String name; // модификатор доступа private защищает данные от прямого доступа
     private String email;
     private int ID_num;
@@ -45,4 +45,5 @@ public class Employee {
     public void setName(String name) {
         this.name = name;
     }
+
 }

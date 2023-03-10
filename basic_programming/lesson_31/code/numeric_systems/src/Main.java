@@ -2,7 +2,7 @@ public class Main {
     public static void main(String[] args) {
         System.out.println("Перевод из одной числовой системы в другую методами в Java");
         System.out.println();
-
+/*
         //Пееревод из двоичной в десятичную
         System.out.println("Перевод из двоичной системы в десятичную");
         String string_num = "1000"; // двоичное число задано строкой
@@ -11,24 +11,27 @@ public class Main {
         System.out.println("В десятичной системе это число: " + binaryNumber);
         System.out.println();
 
-//Пееревод из десятичной системы в двоичную и другие
+*/      //__________________________________________
+        //Пееревод из десятичной системы в двоичную и другие
         System.out.println("Перевод десятичного числа в двоичное (будет выведено строкой)");
-        int n = 161;
+        long n = 9876543210L;
         System.out.println("Десятичное число: " + n);
 
         String binaryNum = "";
-        binaryNum = Integer.toBinaryString(n);
+        binaryNum = Long.toBinaryString(n);
         System.out.println("Двоичное представление этого числа: " + binaryNum);
         System.out.println();
 
-        String octagalNum = Integer.toOctalString(n);
+        String octagalNum = Long.toOctalString(n);
         System.out.println("В восьмеричной системе это: " + octagalNum);
         System.out.println();
 
-        String hexNum = Integer.toHexString(n);
+        String hexNum = Long.toHexString(n);
         System.out.println("В 16-ричной системе это: " + hexNum);
         System.out.println();
 
+        // __________________________________________________________
+  /*
         //Пееревод числа из типа String в числовой тип int
         System.out.println("Перевод строки, содержащей число, в число");
         String strNum = "155";
@@ -40,9 +43,7 @@ public class Main {
         String st = "5";
         int table_num = Integer.parseInt(st);
         System.out.println("Номер столика: " + table_num);
-
-
-
+*/
 
 
     }
