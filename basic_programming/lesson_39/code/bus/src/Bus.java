@@ -12,12 +12,13 @@
   Скорость на маршруте: _____
  */
 public class Bus {
-    int bus_line; // номер маршрута
+    private int bus_line; // номер маршрута
     public Driver driver; // водитель взят из класса Driver
     int capacity; // вместимость
     int speed; // скорость автобуса
     int price; // стоимость проезда
 
+    // конструктор автобуса
     public Bus(int bus_line, int capacity, int speed, int price) {
         this.bus_line = bus_line;
         this.capacity = capacity;

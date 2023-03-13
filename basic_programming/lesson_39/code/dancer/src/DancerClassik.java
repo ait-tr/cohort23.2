@@ -1,20 +1,22 @@
-import java.security.SecureRandom;
-
-public abstract class Dancer {
+public class DancerClassik extends Dancer {
     String name; // это имя танцора
     int age; // его возраст
     String sex; // пол танцора
 
+    @Override
     public void dance() {
-        System.out.println(toString() + " двигается под музыку...");
+        super.dance();
     }
 
-// конструктор
-    public Dancer(String name, int age, String sex) {
+    // конструктор
+    public DancerClassik(String name, int age, String sex) {
+        super(name, age, sex);
         this.name = name;
         this.age = age;
         this.sex = sex;
     }
+
+
 
     @Override
     public String toString() {

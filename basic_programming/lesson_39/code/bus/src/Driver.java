@@ -3,6 +3,7 @@ public class Driver {
     int age;
     Bus bus; // автобус, на котором ездит водитель
 
+    // конструктор с контролем
     public Driver(String name, int age) {
         this.name = name;
         if (age >= 21 && age <= 65) {

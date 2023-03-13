@@ -1,7 +1,7 @@
 public class Triangle extends Shape {
 
-    double a;
-    double h;
+    double a; // длина стороны треугольника
+    double h; // высота, проведенная к основанию
 
     public Triangle(String name, double a, double h) {
         super(name);

@@ -1,8 +1,35 @@
 public class Main {
     public static void main(String[] args) {
-
         System.out.println("Площади фигур");
+
         // круг
+        double r = 10;
+        Circle o1 = new Circle("circle", r);
+        double s_circle = o1.square(); // используем метод класса
+        System.out.println("Площадь круга: " + s_circle);
+
+        // треугольник
+        double a = 100;
+        double h = 200;
+        Triangle t1 = new Triangle("triangle", a, h);
+        double s_triangle = t1.square();
+        System.out.println("Площадь треугольника: " + s_triangle);
+
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+/*
+ // круг
         double r = 10;
         Circle o1 = new Circle("circle", r);
         double s_circle = o1.square(); // вызываем метод для расчета площади
@@ -29,5 +56,4 @@ public class Main {
         Trapezoid trap1 = new Trapezoid("", 10, 30, 20);
         double s_trap = trap1.square();
         System.out.println("Площадь тррапеции:" + s_trap);
-    }
-}
+ */

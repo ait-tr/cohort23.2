@@ -5,6 +5,7 @@ public abstract class Shape {
         this.name = name;
     }
 
+    // этот метод вычисляет площадь
     public double square() {
         return 0;
     }
