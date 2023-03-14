@@ -3,17 +3,16 @@
   "theory": "theory.md",
   "homework": "homework.md",
   "code": [
-    "code/bus/src/Main.java",
-    "code/bus/src/Bus.java",
-    "code/bus/src/Driver.java",
-    "code/bus/src/Passenger.java",
-    "code/dancer/src/BreakDancer.java",
-    "code/dancer/src/Dancer.java",
-    "code/dancer/src/DancerClassik.java",
-    "code/dancer/src/TwistDancer.java",
-    "code/shape/src/Circle.java",
-    "code/shape/src/Main.java",
-    "code/shape/src/Triangle.java"
+    "code/cars/src/Main.java",
+    "code/cars/src/Bus.java",
+    "code/cars/src/Auto.java",
+    "code/cars/src/Track.java",
+    "code/cars/src/Car.java",
+    "code/human/src/Human.java",
+    "code/human/src/Main.java",
+    "code/human/src/Programmer.java",
+    "code/human/src/Sportsman.java",
+    "code/human/src/Teacher.java"
   ],
   "video": ""
 }
