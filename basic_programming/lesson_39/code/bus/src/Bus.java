@@ -26,10 +26,14 @@ public class Bus {
         this.price = price;
     }
 
-    // сеттер назначает водителя для класса Bus из класса Driver
     public void setDriver(Driver driver) {
         this.driver = driver;
     }
+
+    // сеттер назначает водителя для класса Bus из класса Driver
+//    public void setDriver(Driver driver) {
+//        this.driver = driver;
+//    }
 
     // метод, который связывает автобус и водителя
     public void go() {

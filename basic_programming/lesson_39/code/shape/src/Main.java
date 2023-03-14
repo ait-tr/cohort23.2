@@ -9,7 +9,7 @@ public class Main {
         System.out.println("Площадь круга: " + s_circle);
 
         // треугольник
-        double a = 100;
+        double a = 50;
         double h = 200;
         Triangle t1 = new Triangle("triangle", a, h);
         double s_triangle = t1.square();
