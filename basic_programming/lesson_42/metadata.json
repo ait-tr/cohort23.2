@@ -3,16 +3,10 @@
   "theory": "theory.md",
   "homework": "homework.md",
   "code": [
-    "code/interface_example/src/Main.java",
-    "code/interface_example/src/Move.java",
-    "code/interface_example/src/Vehicle.java",
-    "code/two_interfaces/src/BankCard.java",
-    "code/two_interfaces/src/Credit.java",
-    "code/two_interfaces/src/Debit.java",
-    "code/two_interfaces/src/Main.java",
-    "code/object_equal_example/src/Human.java",
-    "code/object_equal_example/src/Main.java",
-    "code/object_equal_example/src/Programmer.java"
+    "code/access_example/src/Main.java",
+    "code/access_example/src/Person.java",
+    "code/money/src/Money.java",
+    "code/money/src/Main.java"
   ],
   "video": ""
 }
