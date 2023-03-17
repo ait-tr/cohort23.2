@@ -3,10 +3,11 @@
   "theory": "theory.md",
   "homework": "homework.md",
   "code": [
-    "code/access_example/src/Main.java",
-    "code/access_example/src/Person.java",
-    "code/money/src/Money.java",
-    "code/money/src/Main.java"
+    "code/internet_shop/src/Main.java",
+    "code/internet_shop/src/Product.java",
+    "code/static_example/src/Auto.java",
+    "code/static_example/src/Car.java",
+    "code/static_example/src/Main.java"
   ],
   "video": ""
 }
