@@ -16,12 +16,23 @@ public class Money {
     // переопределяение метода equals
     @Override
     public boolean equals(Object other) {
-    if (this == other) {
+    if (this == other) { // если этот элемент объект (класс?) равет другому объекту (передаваемомоу) класса
         return true;
     }
-    if (!(other instanceof Money money)) {
-        return false;
+    if (!(other instanceof Money money)) { // такая валюта уже есть в объектах этого класса
+        return false; // если такой валюты нет, то возвращаем false
     }
-    return amount == money.amount && currency.equalsIgnoreCase(money.currency);
+    return amount == money.amount && currency.equalsIgnoreCase(money.currency); // если количество денег совпадает
+                                                                                // и название валюты совпадает,
+                                                                                // то true
     }
 }
+
+//    @Override
+//    public boolean equals(Object obj) {
+//        if (obj == null || this.getClass() != obj.getClass()) {       // если объект obj является экземпляром класса Human
+//            return false;
+//        }
+//        Human that = (Human) obj;
+//        return this.is_worker == that.is_worker && this.age == that.age;
+//    }
