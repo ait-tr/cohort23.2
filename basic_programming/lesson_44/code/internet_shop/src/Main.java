@@ -12,6 +12,7 @@ public class Main {
 //        Вывести на консоль каталог продуктов.
 //        Вывести на консоль покупки посетителей магазина.
 
+        // создаем продукты|объекты в классе Products
         Product p1 = new Product("утюг", 80, 5);
         Product p2 = new Product("кофемашина", 300, 4);
         Product p3 = new Product("холодильник", 600, 7);
@@ -45,7 +46,6 @@ public class Main {
         // создаем пользователей
         User u1 = new User("log1", "pass1", new Basket(products));
         System.out.println(u1);
-
 
     }
 }

@@ -1,15 +1,17 @@
 public class Product {
     //        Создать класс Товар, имеющий переменные имя, цена, рейтинг.
-    String name;
-    double price;
-    int rating;
+    String name; // имя товара
+    double price; // цена товара
+    int rating; // рейтинг товара
 
+    // конструктор класса
     public Product(String name, double price, int rating) {
         this.name = name;
         this.price = price;
         this.rating = rating;
     }
 
+    // геттеры и сеттеры
     public String getName() {
         return name;
     }
@@ -34,6 +36,7 @@ public class Product {
         this.rating = rating;
     }
 
+    // переопределение метода toString (выводит поля объекта в одну строку)
     @Override
     public String toString() {
         return "Product{" +
@@ -43,6 +46,8 @@ public class Product {
                 '}';
     }
 
+    // переопределение метода сравнения объектов в классе Product
+    // по совпадению названияи стоимости
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -52,6 +57,7 @@ public class Product {
         return name.equals(product.name);
     }
 
+     // переопределяем метод hashCode
     @Override
     public int hashCode() {
         int result;

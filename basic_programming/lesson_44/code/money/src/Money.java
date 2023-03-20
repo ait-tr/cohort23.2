@@ -24,8 +24,8 @@ public class Money {
     }
 }
 
-//    public boolean equals(Object other) {
-//    if (this == other) { // если этот элемент объект (класс?) равет другому объекту (передаваемомоу) класса
+//    public boolean equals(Object other) { // other - это имя переменной, мы ее придумали
+//    if (this == other) { // если этот элемент объект (класс?) равен другому объекту (передаваемомоу) класса
 //        return true;
 //    }
 //    if (!(other instanceof Money money)) { // такая валюта уже есть в объектах этого класса

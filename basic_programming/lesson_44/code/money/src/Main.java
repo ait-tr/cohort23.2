@@ -11,7 +11,9 @@ public class Main {
 
 
 
-        System.out.println( m1.equals(m3));
+        System.out.println( m3.equals(m1));
+
+        System.out.println(m1.equals(m2));
 
 
         // создать еще элементы (объекты) класса Money
