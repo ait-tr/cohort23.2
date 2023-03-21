@@ -30,7 +30,7 @@ public class Main {
             if (element < array[middle] ) { // если искомый элемент в левой половине
                 right = middle - 1;
 
-            } if (element > array[middle] ) { // если искомый элемекнт в правой половине
+            } else if (element > array[middle] ) { // если искомый элемекнт в правой половине
                 left = middle + 1;
 
             } else {
