@@ -1,0 +1,18 @@
+{
+  "plan": "plan.md",
+  "theory": "theory.md",
+  "homework": "homework.md",
+  "code": [
+    "code/comparing_objects_0/src/Employee.java",
+    "code/comparing_objects_0/src/Main.java",
+    "code/comparing_objects_0/src/SotrbyID.java",
+    "code/comparing_objects_0/src/SotrbyName.java",
+    "code/comparing_objects_1/src/Dog.java",
+    "code/comparing_objects_1/src/Main.java",
+    "code/comparing_objects_2/src/Human.java",
+    "code/comparing_objects_2/src/HumanByAgeComparator.java",
+    "code/comparing_objects_2/src/HumanByAgeWeightComparator.java",
+    "code/comparing_objects_2/src/Main.java"
+  ],
+  "video": ""
+}
