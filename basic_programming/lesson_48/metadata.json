@@ -3,7 +3,7 @@
   "theory": "theory.md",
   "homework": "homework.md",
   "code": [
-    "code/jawa-swing-example/src/ButtonExample.java"
+    "code/file-io-example/src/Main.java"
   ],
   "video": ""
 }
