@@ -1,6 +1,9 @@
+//**Здача 1. Пример класса Dog - сделать так, чтобы ожно было отсортировать элементы класса (собачки) по годам.
+
 import java.util.List;
 import java.util.ArrayList;
 import java.util.Collections;
+
 public class Main {
     public static void main(String[] args) {
         System.out.println("Сортируем собак по именам и возрасту");
@@ -19,8 +22,28 @@ public class Main {
         dogList.add(dog4);
         dogList.add(dog5);
 
-        Collections.sort(dogList);   // Сортируем список
-        System.out.println(dogList); // печатаем результат
+        System.out.println();
+        System.out.println("Начальный список");
+        for (int i = 0; i < dogList.size(); i++) {
+            System.out.println(dogList.get(i));
+        }
+
+        System.out.println();
+        Collections.sort(dogList, new SortDogsByAge());
+        System.out.println("Сортировка по возрасту");
+        for (int i = 0; i < dogList.size(); i++) {
+            System.out.println(dogList.get(i));
+        }
+
+        System.out.println();
+
+        Collections.sort(dogList, new SortDogsByName());
+        System.out.println("SortDogsByName");
+        for (int i = 0; i < dogList.size(); i++) {
+            System.out.println(dogList.get(i));
+        }
+        //Collections.sort(dogList);   // Сортируем список
+        // System.out.println(dogList); // печатаем результат
 
         // Collections.sort(dogList, new Dog());
 

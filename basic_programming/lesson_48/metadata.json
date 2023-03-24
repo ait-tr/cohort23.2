@@ -1,0 +1,9 @@
+{
+  "plan": "plan.md",
+  "theory": "theory.md",
+  "homework": "homework.md",
+  "code": [
+    "code/jawa-swing-example/src/ButtonExample.java"
+  ],
+  "video": ""
+}
