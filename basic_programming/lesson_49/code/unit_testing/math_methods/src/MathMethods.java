@@ -19,6 +19,10 @@ public class MathMethods {
 
     // - Проверка, что число четное
 
+    public boolean isEven(int number) {
+        if (number % 2 == 0) {return true;} else
+            return false;
+    }
 
     // - Действие n! = 1*2*3*...*n, то есть 5! = 1*2*3*4*5 = 120
 

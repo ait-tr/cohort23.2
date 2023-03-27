@@ -16,7 +16,7 @@ public class MathMethodsTest {
     @Test
     @DisplayName("Тестируем метод isPrime")
     void testIsPrime() {
-        assertTrue(mathMethods.isPrimeNumber(13)); // ожидаю true при числе 13
+        assertTrue(mathMethods.isPrimeNumber(23)); // ожидаю true при числе 13
         assertFalse(mathMethods.isPrimeNumber(121)); // ожидаю false при числе 121
         assertTrue(mathMethods.isPrimeNumber(31));
         assertFalse(mathMethods.isPrimeNumber(45));
