@@ -3,10 +3,8 @@
   "theory": "theory.md",
   "homework": "homework.md",
   "code": [
-    "code/unit_testing/math_methods/src/Main.java",
-    "code/unit_testing/math_methods/src/MathMethods.java",
-    "code/unit_testing/math_methods/src/MathMethodsTest.java",
-    "code/unit_testing/math_methods/src/IncorrectNumberInput.java"
+    "code/date_time/src/Main.java",
+    "code/date_time/src/Table_reservation.java"
   ],
   "video": ""
 }
